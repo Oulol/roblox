@@ -1,17 +1,17 @@
 -- Initialaizing Script
+ver = "1.3"
 wait(2)
 local char = game:GetService("Players").LocalPlayer.Character
 if char.Humanoid.RigType == Enum.RigType.R6 then
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "Amogus Script v1.2";
+		Title = "Amogus Script v" .. ver;
 		Text = "Sorry, you are using R6, its not supported.;
 		Duration = "7";
 	})
-	break
 	script:Destroy()
 else
 	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "Amogus Script v1.2";
+		Title = "Amogus Script v" .. ver;
 		Text = "Script was initialized sucessfuly!";
 		Duration = "7";
 	})
@@ -33,7 +33,7 @@ change(anim.dance,"rbxassetid://9993118595")
 change(anim.dance2,"rbxassetid://9993211479")
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Amogus Script v1.2";
+	Title = "Amogus Script v" .. ver;
 	Text = "Animations was changed sucessfuly! To appy them you need to jump.";
 	Duration = "7";
 })
