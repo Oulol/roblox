@@ -1,11 +1,20 @@
 -- Initialaizing Script
 wait(2)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Amogus Script v1.2";
-	Text = "Script was initialized sucessfuly!";
-	Duration = "7";
-})
 local char = game:GetService("Players").LocalPlayer.Character
+if char.Humanoid.RigType == Enum.RigType.R6 then
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Amogus Script v1.2";
+		Text = "Sorry, you are using R6, its not supported.;
+		Duration = "7";
+	})
+	break
+	script:Destroy()
+else
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Amogus Script v1.2";
+		Text = "Script was initialized sucessfuly!";
+		Duration = "7";
+	})
 local anim = char:WaitForChild("Animate")
 -- Add fuction
 function change(anim,id)
